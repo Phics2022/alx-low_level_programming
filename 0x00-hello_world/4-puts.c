@@ -1,5 +1,6 @@
 #include <stdio.h>
-/**function main
+/**
+*function main
 *puts to standard
 */
 
