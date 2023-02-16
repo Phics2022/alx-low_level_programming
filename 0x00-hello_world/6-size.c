@@ -9,12 +9,10 @@
 
 int main(void)
 {
-char c;
-int i;
-long l;
-float f;
-printf("the size of char is %c\n", sizeof(c));
-printf("the size of int is %d\n", sizeof(i));
-printf("the size of long is %l\n", sizeof(l));
+printf("Size of a char: %lu", sizeof(char));
+printf("Size of a int: %lu", sizeof(int));
+printf("Size of a long: %lu", sizeof(long));
+printf("Size of a float: %lu", sizeof(float));
+printf("Size of a long long: %lu", sizeof(long long));
 return (0);
 }
