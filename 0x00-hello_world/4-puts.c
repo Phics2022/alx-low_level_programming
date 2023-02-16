@@ -3,7 +3,7 @@
 *main - print using puts
 *puts to standard
 *
-*return 0
+*Return: 0 if nothing is putted
 */
 
 int main(void)
