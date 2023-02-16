@@ -1,7 +1,9 @@
 #include <stdio.h>
 /**
-*function main
+*main - print using puts
 *puts to standard
+*
+*return 0
 */
 
 int main(void)
