@@ -1,5 +1,7 @@
 #include <stdio.h>
-/* main function print word with puts*/
+/**function main
+*puts to standard
+*/
 
 int main(void)
 {
