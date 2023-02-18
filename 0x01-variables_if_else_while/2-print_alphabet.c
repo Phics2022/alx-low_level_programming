@@ -10,7 +10,9 @@
 int main(void)
 {
 char c;
+ /* print lowercase */
 for (c = 'a'; c <= 'z' ; ++c)
 putchar(c);
-return (0);
+putchar('\n');
+ getc();
 }
