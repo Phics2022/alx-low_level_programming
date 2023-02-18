@@ -8,12 +8,14 @@
  */
 int main(void)
 {
-  char c;
+char c;
   /* create lower case loop*/
 for (c = 'a'; c <= 'z'; c++)
 {
+putchar(c);
   /* skip q snd e*/
-if (c == q || c == e)
+if (c == 'q' || c == 'e')
 continue ;
 }
+putchar('\n');
 }
