@@ -24,6 +24,8 @@ if (c == 'p')
 c++;
 continue;
 }
+
 }
-  return (0);
+putchar('\n')
+return (0);
 }
