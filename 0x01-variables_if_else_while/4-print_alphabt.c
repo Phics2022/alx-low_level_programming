@@ -9,14 +9,21 @@
 int main(void)
 {
 char c;
-  /* create lower case loop*/
+/*lop throuh exit e and q*/
 for (c = 'a'; c <= 'z'; c++)
 {
 putchar(c);
-  /* skip q snd e*/
-if (c = 'q' || c = 'e')
+
+if (c == 'd')
+{
+c++;
 continue;
 }
-putchar('\n');
-return (0);
+if (c == 'p')
+{
+c++;
+continue;
+}
+}
+  return (0);
 }
