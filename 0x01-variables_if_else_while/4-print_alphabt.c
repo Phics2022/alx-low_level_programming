@@ -4,7 +4,7 @@
  * main - holding the func for loop
  *for prints the lowercase using continur=e to skip q and e
  *
- *return null
+ *Return: 0
  */
 int main(void)
 {
@@ -15,7 +15,7 @@ for (c = 'a'; c <= 'z'; c++)
 putchar(c);
   /* skip q snd e*/
 if (c = 'q' || c = 'e')
-continue ;
+continue;
 }
 putchar('\n');
 return (0);
