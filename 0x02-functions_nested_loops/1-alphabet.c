@@ -7,7 +7,7 @@
  */
 int main(void)
 {
-print_alphabet("abcdefghijklmnop");
-_putchar(print_alphabet());
+void print_alphabet(void);
+_putchar(print_alphabet);
 return (0);
 }
