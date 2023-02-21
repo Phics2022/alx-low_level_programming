@@ -1,0 +1,13 @@
+#include "main.h"
+/* print _putchar with _putchar*/
+/**
+ *main - using putchar to putchar
+ *_putchar
+ *
+ *Return: 0
+ */
+int main (void)
+{
+  _putchar('_');
+  _putchar('p');
+  _p
