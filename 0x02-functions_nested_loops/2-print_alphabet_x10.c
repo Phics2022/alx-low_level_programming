@@ -1,6 +1,7 @@
 #include "main.h"
 /**
  *print_alphabet_x10 to putchar
+ *_put char to cha
  *
  *Return: 0;
  */
