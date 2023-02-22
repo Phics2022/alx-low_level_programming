@@ -1,8 +1,8 @@
 #include "main.h"
 /*print the alphabet in 10 lines*/
 /**
- *print_alphabet_x10 to putchar
- *print the alphabet usiing putchar
+ *print_alphabet_x10 - to putchar
+ *@void: return void
  *
  *Return: 0;
  */
