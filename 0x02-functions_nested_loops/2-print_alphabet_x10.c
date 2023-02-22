@@ -1,4 +1,5 @@
 #include "main.h"
+/*print the alphabet in 10 lines*/
 /**
  *print_alphabet_x10 to putchar
  *_put char to cha
@@ -8,10 +9,8 @@
 /* using the newe func _putchar*/
 void print_alphabet_x10(void)
 {
-  /*using putchar to _putchar*/
 char c;
 int i;
-/*using putchr*/
 for (i = 1; i <= 10; i++)
 {
 for (c = 'a'; c <= 'z'; c++)
