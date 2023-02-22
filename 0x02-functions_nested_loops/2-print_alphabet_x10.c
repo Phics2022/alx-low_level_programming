@@ -8,6 +8,7 @@
 /* using the newe func _putchar*/
 void print_alphabet_x10(void)
 {
+  /*using putchar to _putchar*/
 char c;
 int i;
 /*using putchr*/
