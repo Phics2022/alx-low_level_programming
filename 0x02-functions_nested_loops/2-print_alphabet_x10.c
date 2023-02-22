@@ -2,7 +2,7 @@
 /*print the alphabet in 10 lines*/
 /**
  *print_alphabet_x10 to putchar
- *_put char to cha
+ *print the alphabet usiing putchar
  *
  *Return: 0;
  */
