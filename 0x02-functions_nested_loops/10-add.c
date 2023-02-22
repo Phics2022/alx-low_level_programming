@@ -1,9 +1,10 @@
 #include "main.h"
 /**
  *add - add integerds
- *@c, @d : parameters
+ *@c: parameters
+ *@d: parameter
  *
- *return: result
+ *Return: r
  */
 int add(int c, int d)
 {
