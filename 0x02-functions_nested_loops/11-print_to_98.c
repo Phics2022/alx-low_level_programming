@@ -12,22 +12,22 @@ int k;
 if (n >=0 && n <=98)
 {
 for(k = n; k <= 98; k++)
-putchar(k);
+putchar('0'+ k);
 putchar('\n');
 }
 else if (n < 0)
 {
 for(k = n; k <= 98; k++)
-putchar(k);
+putchar('0'+ k);
 putchar('\n');
 }
 else if (n > 98)
 {
 for(k = n; k >= 98; k--)
-putchar(k);
+putchar('0'+ k);
 putchar('\n');
 }
 else if (n == 98)
-putchar(n);
+putchar('0'+ n);
 }
       
