@@ -5,6 +5,7 @@
  *
  *Return: 0;
  */
+/* using the newe func _putchar*/
 void print_alphabet_x10(void)
 {
 char c;
