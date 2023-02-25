@@ -15,7 +15,7 @@ if (i == 1)
 i++;
 continue;
 }
-if (i == 3)
+else if (i == 3)
 {
 i++;
 continue;
