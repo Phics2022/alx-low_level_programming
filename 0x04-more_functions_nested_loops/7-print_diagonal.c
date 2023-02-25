@@ -6,23 +6,22 @@
  * Return: nvoid
  */
 void print_diagonal(int n)
+{   
+if (n >=1)
 {
-int y, z;
-if (n >= 1)
+for(int y = 0; y < n; y++)
 {
-for (y = 0; y < n; y++)
+for(int z = 0; z < n; z++)
 {
-for (z = 0; z < n; z++)
-{
-if (z == y)
-_putchar('\\');
+if(z == y)
+putchar('\\');
 else
-_putchar(' ');
+putchar(' ');
 }
+putchar('\n');
 }
-}
-else
+}else
 {
-_putchar('\n');
+putchar('\n');
 }
 }
