@@ -14,14 +14,14 @@ for(int y = 0; y < n; y++)
 for(int z = 0; z < n; z++)
 {
 if(z == y)
-putchar('\\');
+_putchar('\\');
 else
-putchar(' ');
+_putchar(' ');
 }
-putchar('\n');
+_putchar('\n');
 }
 }else
 {
-putchar('\n');
+_putchar('\n');
 }
 }
