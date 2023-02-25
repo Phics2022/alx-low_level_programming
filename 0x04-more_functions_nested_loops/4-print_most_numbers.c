@@ -21,4 +21,5 @@ i++;
 continue;
 }
 }
+_putchar ('\n');
 }
