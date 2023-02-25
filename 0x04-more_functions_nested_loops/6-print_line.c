@@ -7,7 +7,7 @@
  */
 void print_line(int n)
 {
-if (n => 1)
+if (n >= 1)
 {
 int j,y;
 y = n + 1;
@@ -18,4 +18,5 @@ _putchar('\n');
 else
 {
 _putchar('\n');
+}
 }
