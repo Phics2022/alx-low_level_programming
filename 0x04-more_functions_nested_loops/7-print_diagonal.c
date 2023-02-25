@@ -7,13 +7,13 @@
  */
 void print_diagonal(int n)
 {
-int y,z;
+int y, z;
 for (y = 0; y < n; y++)
 {
-for(z = 0; z < n; z++)
+for (z = 0; z < n; z++)
 {
 if (z == y)
-_putchar('#');
+_putchar('\\');
 else
 _putchar(' ');
 }
