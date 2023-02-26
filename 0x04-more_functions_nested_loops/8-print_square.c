@@ -15,7 +15,7 @@ for (j = 1; j < y; j++)
 {
 for (size = 0; size < y; size++)
 _putchar('#');
-_putchar('\n);
+_putchar('\n');
 }
 }
 else
