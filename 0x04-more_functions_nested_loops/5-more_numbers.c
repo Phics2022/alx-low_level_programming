@@ -17,8 +17,6 @@ _putchar(j + '0');
 }
 else if (j >= 10)
 {
-  int y;
-  y =
 _putchar((j / 10) + '0');
 _putchar((j % 10) + '0');
 }
