@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *void reset_to_98 - changr n to 98 using pounter o
+ *reset_to_98 - changr n to 98 using pounter o
  *@n: parameter to change value
  *
  *Return: void
