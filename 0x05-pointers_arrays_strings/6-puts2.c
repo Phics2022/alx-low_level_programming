@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *6-put2 - print two forward
+ *puts2 - print two forward
  *@str: parameter
  *
  *Return: void
