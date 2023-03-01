@@ -11,7 +11,7 @@ int i, j;
 for (i = 0; str[i] != '\0'; i++)
 ;
 j = i / 2;
-while (str[j] != NULL)
+while (str[j] != '\0')
 {
 _putchar(str[j]);
 j++;
