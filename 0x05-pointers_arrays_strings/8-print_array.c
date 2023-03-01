@@ -25,5 +25,5 @@ printf("%d, ", a[j]);
 }
 j++;
 }
-_putchar('\n');
+printf("\n");
 }
