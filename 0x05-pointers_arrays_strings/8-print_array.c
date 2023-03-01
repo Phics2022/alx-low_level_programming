@@ -25,4 +25,5 @@ printf("%d, ", a[j]);
 }
 j++;
 }
+_putchar('\n');
 }
