@@ -3,6 +3,7 @@
  *_strncat - concatanates strings
  *@dest: parameter
  *@src: parameter
+ *@n: parameter
  *
  *Return: dest
  */
