@@ -1,8 +1,0 @@
-#include "main.h"
-/**
- *_strcmp - compare strings
- *@s1: parameter
- *@s2: parameter
- *
- *Return: diff
- */
