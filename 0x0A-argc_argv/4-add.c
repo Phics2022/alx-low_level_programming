@@ -14,11 +14,11 @@ int n, sum;
 sum = 0;
 if (argc == 1)
 printf("0\n");
-if ( argc > 1)
+if (argc > 1)
 {
 for (n = 1; n < argc; n++)
 {
-if(atoi(argv[n]) >= 1 && atoi(argv[n]) <= 10000)
+if (atoi(argv[n]) >= 1 && atoi(argv[n]) <= 10000)
 {
 sum += atoi(argv[n]);
 }
