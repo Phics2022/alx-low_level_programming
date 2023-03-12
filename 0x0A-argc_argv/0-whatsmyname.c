@@ -2,6 +2,7 @@
 #include <stdio.h>
 /**
  *main - print my name
+ *@argc: counter
  *@argv: vector
  *
  *Return: void
