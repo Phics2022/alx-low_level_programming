@@ -13,7 +13,7 @@ int main(int argc, char  *argv[])
 int mul, n;
 n = 1;
 mul = 1;
-if (argc > 1)
+if (argc == 3)
 {
 while (n < argc)
 {
@@ -25,7 +25,7 @@ return (0);
 }
 else
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 }
