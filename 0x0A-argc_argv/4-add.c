@@ -17,14 +17,14 @@ if (argc == 1)
 printf("0\n");
 else
 {
-for(i = 1; i < argc; i++)
+for (i = 1; i < argc; i++)
 {
 if (atoi(argv[i]) >= 1 && atoi(argv[i]) <= 100000000)
 sum += atoi(argv[i]);
-else 
+else
 {
 printf("Error\n");
-return 1;
+return (1);
 }
 }
 printf("%d\n", sum);
