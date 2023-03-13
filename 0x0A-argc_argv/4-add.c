@@ -1,4 +1,5 @@
 #include "main.h"
+#include <ctype.h>
 #include <stdlib.h>
 #include <stdio.h>
 /**
@@ -8,24 +9,22 @@
  *
  *Return: void
  */
-int main(int argc, char  *argv[])
+int main(int argc, char *argv[])
 {
-int n, sum;
+int i, sum;
 sum = 0;
 if (argc == 1)
 printf("0\n");
-if (argc > 1)
-{
-for (n = 1; n < argc; n++)
-{
-if (atoi(argv[n]) >= 1 && atoi(argv[n]) <= 10000)
-{
-sum += atoi(argv[n]);
-}
 else
 {
+for(i = 1; i < argc; i++)
+{
+if (atoi(argv[i]) >= 1 && atoi(argv[i]) <= 100000000)
+sum += atoi(argv[i]);
+else 
+{
 printf("Error\n");
-return (1);
+return 1;
 }
 }
 printf("%d\n", sum);
