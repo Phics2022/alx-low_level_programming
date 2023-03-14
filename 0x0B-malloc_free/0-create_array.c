@@ -23,4 +23,4 @@ array[i] = c;
 }
 return (array);
 }
-}
+
