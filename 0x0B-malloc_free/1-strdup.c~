@@ -1,0 +1,26 @@
+#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ * _strdup - copy to the back
+ *@str: string
+ *
+ *Return: string
+ */
+char *_strdup(char *str)
+{
+  char *newS;
+  int i, j, n;
+  if (str == NULL)
+    return (NULL);
+  for (i = 0; str != NULL; i++)
+    ;
+  newS = malloc(i + 1);
+  if (newS == NULL)
+    return (NULL);
+  for (j = 0; str != NULL; j++)
+    newS[j] = str[j];
+  newS[j] = '\0';
+  free(newS);
+  return (newS);
+}
