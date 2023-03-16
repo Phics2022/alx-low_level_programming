@@ -12,8 +12,8 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *s;
-int i, j;
-int x, y;
+unsigned int i, j;
+unsigned int x, y;
 j = 0;
 if (s1 == NULL)
 s1 = "";
@@ -25,7 +25,7 @@ for (y = 0; s2[y]; y++)
 ;
 if (n > y)
 n = y;
-s = malloc(sizeof(char)* (x + n + 1));
+s = malloc(sizeof(char) * (x + n + 1));
 if (s == NULL)
 return (NULL);
 for (i = 0; s1[i]; i++)
