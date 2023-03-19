@@ -5,6 +5,7 @@
  *main - give amount of change
  *@argc: counter
  *@argv: change
+ *@a:
  *
  *Return: amount of change
  */
@@ -55,5 +56,6 @@ amt[i] = 0;
 i++;
 }
 printf("%d\n", amt[0] + amt[2] + amt[3] + amt[1] + amt[4]);
+return (0);
 }
 
