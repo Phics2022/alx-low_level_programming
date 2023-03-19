@@ -26,7 +26,7 @@ else
 printf("Error\n");
 return (1);
 }
-if (!isdigit(atoi(argv[i])))
+if (isdigit(atoi(argv[i])))
 {
 printf("Error\n");
 return (1);

@@ -1,4 +1,3 @@
-#include "main.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
@@ -9,21 +8,12 @@
  *
  *Return: amount of change
  */
+int change(int a);
 int main(int argc, char *argv[])
 {
-int *cashSet;
-int *amt;
-int i;
-amt = malloc(sizeof(int) * 5);
-cashSet = malloc(sizeof(int) * 5);
-cashSet[0] = 25;
-cashSet[1] = 10;
-cashSet[2] = 5;
-cashSet[3] = 2;
-cashSet[4] = 1;
 if (argc > 2 || argc < 2)
 {
-printf("Error");
+printf("Error\n");
 return (1);
 }
 if (atoi(argv[1]) < 0)
@@ -31,18 +21,39 @@ if (atoi(argv[1]) < 0)
 printf("0\n");
 return (0);
 }
+change(atoi(argv[1]));
+return (0);
+}
+/**
+ *change - give amount of change
+ *@a: counter
+ *
+ *Return: amount of change
+ */
+int change(int a)
+{
+int i;
+int *cashSet;
+int *amt;
+amt = malloc(sizeof(int) * 5);
+cashSet = malloc(sizeof(int) * 5);
+cashSet[0] = 25;
+cashSet[1] = 10;
+cashSet[2] = 5;
+cashSet[3] = 2;
+cashSet[4] = 1;
 i = 0;
 while (i < 5)
-{   
-if (atoi(argv[1]) >= cashSet[i])
 {
-amt[i] = atoi(argv[1]) / cashSet[i];
-atoi(argv[1]) = atoi(argv[1]) - (cashSet[i] * amt[i]);
+if (a >= cashSet[i])
+{
+amt[i] = a / cashSet[i];
+a = a - (cashSet[i] * amt[i]);
 }
-else
+else if (a < cashSet[i])
 amt[i] = 0;
-i++;	
+i++;
 }
-printf("%d\n", amt[0] + amt[2] + amt[3] +amt[1] + amt[4]);
-return 0;
+printf("%d\n", amt[0] + amt[2] + amt[3] + amt[1] + amt[4]);
 }
+
