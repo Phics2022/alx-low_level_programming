@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+int change(int a);
 /**
  *main - give amount of change
  *@argc: counter
  *@argv: change
- *@a:
  *
  *Return: amount of change
  */
-int change(int a);
 int main(int argc, char *argv[])
 {
 if (argc > 2 || argc < 2)
