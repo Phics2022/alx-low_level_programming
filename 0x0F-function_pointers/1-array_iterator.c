@@ -10,7 +10,7 @@
  */
 void array_iterator(int *array, size_t size, void (*action)(int))
 {
-int n = sizeof(array) / sizeof(array[0]);
+int n =(size / sizeof(array[0]) + 1);
 int i;
 for (i = 0; i <= n + 2; i++)
 {
