@@ -15,8 +15,6 @@ if (array == NULL)
 return;
 if (size <= 0)
 return;
-if (action == NULL)
-return;
 for (i = 0; i < size; i++)
 {
 action(array[i]);
