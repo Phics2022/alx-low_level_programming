@@ -29,9 +29,6 @@ printf("(nil)%s", separator);
 else
 printf("%s%s", str, separator);
 }
-if (str == NULL)
-printf("(nil)\n");
-else
 printf("%s\n", va_arg(new_param_string, char*));
 va_end(new_param_string);
 }
