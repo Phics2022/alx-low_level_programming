@@ -21,17 +21,11 @@ printf("\n");
 return;
 }
 va_start(new_param_string, n);
-for (i = 0; i < n; i++)
+for (i = 0; i < n - 1; i++)
 {
 str = va_arg(new_param_string, char *);
-if (str == "\0")
-str = "(nil)";
-if (i < n - 1)
-{
 printf("%s%s", str, separator);
 }
-else if (i == n - 1)
 printf("%s\n", va_arg(new_param_string, char*));
-}
 va_end(new_param_string);
 }
