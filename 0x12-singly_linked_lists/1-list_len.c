@@ -1,0 +1,20 @@
+#include "lists.h"
+#include <stdio.h>
+#include <stdlib.h>
+/**
+ *list_len - number of elements
+ *@h: parameter
+ *
+ *Return: num
+ */
+size_t list_len(const list_t *h)
+{
+const list_t *current = h;
+size_t eleNum = 0;
+while (current != NULL)
+{
+current = current->next;
+eleNum++;
+}
+return (eleNum);
+}
