@@ -3,7 +3,7 @@
 #include <stdlib.h>
 /**
  *print_list - prints all elemants
- *@h: pointer to list
+ *@h: pointer
  *
  *Return: nodes number
  */
