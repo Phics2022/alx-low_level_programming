@@ -2,7 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- *print_list - prints all elemants of list
+ *print_list - prints all elemants
  *@h: pointer to list
  *
  *Return: nodes number
