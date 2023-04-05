@@ -11,9 +11,9 @@
 void free_listint2(listint_t **head)
 {
 listint_t *temp = *head;
+char *mes = "Freed !";
 if (temp == NULL)
 {
-char *mes = "Freed !";
 free(temp);
 *head = NULL;
 return (mes);
