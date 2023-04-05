@@ -16,7 +16,7 @@ if (temp == NULL)
 exit(98);
 while (temp != NULL)
 {
-printf("[%p] %d", temp, temp->n);
+printf("[%p] %d\n", (void*)temp, temp->n);
 count++;
 temp = temp->next;
 }
