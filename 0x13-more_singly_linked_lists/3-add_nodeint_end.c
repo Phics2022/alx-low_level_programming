@@ -21,11 +21,12 @@ if (*head == NULL)
 *head = temp;
 return (temp);
 }
-while (temp1 != NULL)
+while (temp1->next != NULL)
 {
 temp1 = temp1->next;
 }
 temp->n = n;
+temp1 = temp1->next;
 temp1->next = temp;
 return (temp);
 }
