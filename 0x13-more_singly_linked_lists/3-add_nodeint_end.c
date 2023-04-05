@@ -21,7 +21,7 @@ if (*head == NULL)
 *head = temp;
 return (temp);
 }
-while (temp1->next != NULL)
+while (temp1 != NULL)
 {
 temp1 = temp1->next;
 }
