@@ -9,11 +9,9 @@
  */
 void print_binary(unsigned long int n)
 {
-unsigned int mask = 1 << 31;
-unsigned int len;
-for (len = 1; len <= 32; ++len)
+if (n > 1)
 {
-putchar(n & mask ? '1' : '0');
-n <<= 1;
+print_binary (n >> 1);
 }
+putchar((n & 1) ? '1' : '0');
 }
