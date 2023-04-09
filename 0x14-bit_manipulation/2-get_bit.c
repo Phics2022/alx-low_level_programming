@@ -14,5 +14,5 @@ unsigned long int len = sizeof(unsigned long int) * 8;
 unsigned int mask = 1UL << index;
 if (index >= len)
 return (-1);
-return (n & mask) ? 1 : 0;
+return ((n & mask) ? 1 : 0);
 }
