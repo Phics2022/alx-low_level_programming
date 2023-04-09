@@ -2,7 +2,7 @@
 #include <stdlib.h>
 #include "main.h"
 /**
- *binary_to_int - binary to int
+ *binary_to_uint - binary to int
  *@b: pointer
  *
  *Return: converted number
@@ -10,7 +10,7 @@
 unsigned int binary_to_uint(const char *b)
 {
 unsigned int pow_two = 1;
-unsigned int value =0;
+unsigned int value = 0;
 const char *b_copy = b;
 unsigned int a = atoi(b);
 if (b == NULL)
