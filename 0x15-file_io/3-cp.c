@@ -18,7 +18,7 @@ char *buff = malloc(1024);
 ssize_t reader = read(fd, buff, 1024);
 ssize_t writer;
 ssize_t closer;
-if (argc < 2 && argc > 2)
+if (argc != 2)
 {
 dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 close(fd);
