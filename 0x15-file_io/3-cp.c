@@ -25,7 +25,7 @@ close(fd);
 free(buff);
 exit(97);
 }
-if (reader == -1 || fd == -1)
+if (reader == -1 && fd == -1)
 {
 dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 close(fd);
@@ -35,7 +35,7 @@ exit(98);
 close(fd);
 fd = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 writer = write(fd, buff, 1024);
-if (fd == -1 || writer == -1)
+if (fd == -1 && writer == -1)
 {
 dprintf(3, "Error: Can't write to %s\n", argv[2]);
 close(fd);
