@@ -17,13 +17,13 @@ while (mask > 0)
 {
 	if (mask & n)
 	{
-		_putchar('1');
+		_putchar(1 + '0');
 		one = 1;
 	}
 	else if (one)
-		_putchar('0');
+		_putchar(0 + '0');
 	mask >>= 1;
 }
 if (!one)
-	_putchar ('0');
+	_putchar (0 + '0');
 }
