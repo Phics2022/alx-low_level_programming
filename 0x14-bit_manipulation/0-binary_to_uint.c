@@ -11,10 +11,7 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-unsigned int bin = atoi(b);
-unsigned int two = 1;
 unsigned int result = 0;
-unsigned int exten;
 int i;
 int len = strlen(b);
 if (b == NULL)
@@ -23,14 +20,7 @@ for (i = 0; i <len; i++)
 {
 	if (b[i] != '1' && b[i] != '0')
 		return (0);
-}
-while (bin > 0)
-{
-exten = bin % 10;
-result += (exten * two);
-two *= 2;
-bin /= 10;
-b++;
+	result = (result << 1) | (b[i] - '0');
 }
 return (result);
 }
