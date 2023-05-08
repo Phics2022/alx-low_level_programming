@@ -9,30 +9,25 @@
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 int fd;
-size_t actual_num = 0;
+ssize_t actual_num = 0;
 ssize_t check;
-char buff[1024];
+char buff[letters];
 if (filename == NULL)
 	return (0);
 fd = open(filename, O_RDONLY);
 if (fd == -1)
 	return (0);
-check = read(fd, buff, letters);
-if (check == -1)
+actual_num = read(fd, buff, letters);
+if (actual_num == -1)
 {
 	close(fd);
 	return (0);
-}
-while (buff[actual_num] != '\0' && actual_num < letters)
-{
-	actual_num++;
 }
 check = write(STDOUT_FILENO, buff, actual_num);
-if (check == -1)
-{
-	close(fd);
-	return (0);
-}
 close(fd);
+if (check != actual_num)
+	return (0);
+if (check == -1)
+	return (0);
 return (actual_num);
 }
