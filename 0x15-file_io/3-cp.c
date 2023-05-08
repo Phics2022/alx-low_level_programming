@@ -13,7 +13,7 @@ int main(int ac, char *av[])
 int fd;
 ssize_t check;
 ssize_t w_check;
-char *buff = malloc(sizeof(char *) * 1000);
+char *buff = malloc(sizeof(char *) * 6000);
 if (ac != 3)
 {
 	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
