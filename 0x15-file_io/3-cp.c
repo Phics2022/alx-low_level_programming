@@ -1,4 +1,5 @@
 #include "main.h"
+void close_err(int fd, char *av);
 void cw_err(int fd, char *av);
 void open_err(int fd, char *av);
 /**
@@ -24,17 +25,22 @@ open_err(fd, av[1]);
 check = read(fd, buff, 4000);
 if (check == -1)
 	close(fd);
+close_err(fd, av[2]);
 open_err(check, av[1]);
 close(fd);
+close_err(fd, av[2]);
 fd = open(av[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 if (fd == -1)
 	close(fd);
+close_err(fd, av[2]);
 cw_err(fd, av[2]);
 w_check = write(fd, buff, strlen(buff));
 if (w_check == -1)
 	close(fd);
+close_err(fd, av[2]);
 cw_err(w_check, av[2]);
 close(fd);
+close_err(fd, av[2]);
 return (0);
 }
 
@@ -71,4 +77,21 @@ exit(99);
 }
 else
 return;
+}
+/**
+ * close_err - close error
+ * @fd: des
+ * @av: name
+ *
+ * Return: void
+ */
+void close_err(int fd, __attribute__((unused)) char *av)
+{
+	if (fd == -1)
+	{
+		dprintf(STDERR_FILENO, "Error: Can't close fd %d", fd);
+		exit(100);
+	}
+	else
+		return;
 }
