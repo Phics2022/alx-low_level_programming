@@ -66,7 +66,7 @@ void cw_err(int fd, char *av)
 {
 if (fd == -1)
 {
-dprintf(STDERR_FILENO, "Error: Can't write to file %s\n", av);
+dprintf(STDERR_FILENO, "Error: Can't write to %s\n", av);
 exit(99);
 }
 else
