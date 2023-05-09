@@ -30,26 +30,10 @@ fd = open(av[2], O_WRONLY | O_TRUNC | O_CREAT, 0664);
 if (fd == -1)
 	close(fd);
 cw_err(fd, av[2]);
-printf("%ld\n", check);
-if (strlen(buff) < 1024)
-{
-	w_check = write(fd, buff, strlen(buff));
-	if (w_check == -1)
-		close(fd);
-	cw_err(w_check, av[2]);
-}
-	else
-{
-while (check > 0)
-{
-	w_check = write(fd, buff, 1024);
-	if (w_check == -1)
-		close(fd);
-	cw_err(w_check, av[2]);
-	check -= w_check;
-	buff += w_check;
-}
-}
+w_check = write(fd, buff, strlen(buff));
+if (w_check == -1)
+	close(fd);
+cw_err(w_check, av[2]);
 close(fd);
 return (0);
 }
