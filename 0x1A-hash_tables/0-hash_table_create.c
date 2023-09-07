@@ -22,9 +22,11 @@ hash_table_t *hash_table_create(unsigned long int size)
 	/* creating space for the array of items */
 	/* This allocates space for `hash_node` for `size` number of times */
 	new_table->array = calloc(new_table->size, sizeof(hash_node_t));
-	if (new_table->array = NULL)
+	if (new_table->array == NULL)
+	{
+		free(new_table);
 		return (NULL);
-
+	}
 	/* place NULL in every element of the hash array */
 	for (i = 0; i < new_table->size; i++)
 		new_table->array[i] = NULL;
